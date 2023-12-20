@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Interactive Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/three.js"></script>
+    <script src="js/animation.js" defer></script>
+    <script src="js/interaction.js" defer></script>
+</head>
+<body>
+    <div id="loader" class="hidden">Loading...</div>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        // Ensure the DOM is fully loaded before initializing the 3D scene
+        document.addEventListener('DOMContentLoaded', function() {
+            init();
+            animate();
+        });
+    </script>
+</body>
+</html>
